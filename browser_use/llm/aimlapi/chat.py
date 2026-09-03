@@ -33,7 +33,7 @@ _ATTRIBUTION_HEADERS: Mapping[str, str] = MappingProxyType(
 		'HTTP-Referer': 'https://github.com/browser-use/browser-use',
 		'X-Title': 'Browser Use',
 		'X-AIMLAPI-Source': 'agent/browser-use',
-		'X-AIMLAPI-Partner-ID': 'part_browseruse',
+		'X-AIMLAPI-Partner-ID': 'part_DtfcGF9FcEYD50B1yIkFL8a6',
 	}
 )
 
