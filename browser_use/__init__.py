@@ -98,6 +98,7 @@ _LAZY_IMPORTS = {
 	'ChatAnthropicBedrock': ('browser_use.llm.aws.chat_anthropic', 'ChatAnthropicBedrock'),
 	'ChatAWSBedrock': ('browser_use.llm.aws.chat_bedrock', 'ChatAWSBedrock'),
 	'ChatBrowserUse': ('browser_use.llm.browser_use.chat', 'ChatBrowserUse'),
+	'ChatAIMLAPI': ('browser_use.llm.aimlapi.chat', 'ChatAIMLAPI'),
 	'ChatCerebras': ('browser_use.llm.cerebras.chat', 'ChatCerebras'),
 	'ChatDeepSeek': ('browser_use.llm.deepseek.chat', 'ChatDeepSeek'),
 	'ChatGroq': ('browser_use.llm.groq.chat', 'ChatGroq'),
@@ -108,7 +109,6 @@ _LAZY_IMPORTS = {
 	'ChatOllama': ('browser_use.llm.ollama.chat', 'ChatOllama'),
 	'ChatOpenRouter': ('browser_use.llm.openrouter.chat', 'ChatOpenRouter'),
 	'ChatOrcaRouter': ('browser_use.llm.orcarouter.chat', 'ChatOrcaRouter'),
-	'ChatAIMLAPI': ('browser_use.llm.aimlapi.chat', 'ChatAIMLAPI'),
 	'ChatVercel': ('browser_use.llm.vercel.chat', 'ChatVercel'),
 	# LLM models module
 	'models': ('browser_use.llm.models', None),
@@ -151,6 +151,7 @@ __all__ = [
 	'ActionModel',
 	'AgentHistoryList',
 	# Chat models
+	'ChatAIMLAPI',
 	'ChatOpenAI',
 	'ChatGoogle',
 	'ChatAnthropic',
@@ -167,7 +168,6 @@ __all__ = [
 	'ChatOllama',
 	'ChatOpenRouter',
 	'ChatOrcaRouter',
-	'ChatAIMLAPI',
 	'ChatVercel',
 	'Tools',
 	'Controller',

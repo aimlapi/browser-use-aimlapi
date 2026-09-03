@@ -81,6 +81,7 @@ if TYPE_CHECKING:
 
 # Lazy imports mapping for heavy chat models
 _LAZY_IMPORTS = {
+	'ChatAIMLAPI': ('browser_use.llm.aimlapi.chat', 'ChatAIMLAPI'),
 	'ChatAnthropic': ('browser_use.llm.anthropic.chat', 'ChatAnthropic'),
 	'ChatAnthropicBedrock': ('browser_use.llm.aws.chat_anthropic', 'ChatAnthropicBedrock'),
 	'ChatAWSBedrock': ('browser_use.llm.aws.chat_bedrock', 'ChatAWSBedrock'),
@@ -96,7 +97,6 @@ _LAZY_IMPORTS = {
 	'ChatOpenAI': ('browser_use.llm.openai.chat', 'ChatOpenAI'),
 	'ChatOpenRouter': ('browser_use.llm.openrouter.chat', 'ChatOpenRouter'),
 	'ChatOrcaRouter': ('browser_use.llm.orcarouter.chat', 'ChatOrcaRouter'),
-	'ChatAIMLAPI': ('browser_use.llm.aimlapi.chat', 'ChatAIMLAPI'),
 	'ChatVercel': ('browser_use.llm.vercel.chat', 'ChatVercel'),
 }
 
@@ -146,6 +146,7 @@ __all__ = [
 	'ContentRefusal',
 	'ContentImage',
 	# Chat models
+	'ChatAIMLAPI',
 	'BaseChatModel',
 	'ChatOpenAI',
 	'ChatBrowserUse',
@@ -161,7 +162,6 @@ __all__ = [
 	'ChatOllama',
 	'ChatOpenRouter',
 	'ChatOrcaRouter',
-	'ChatAIMLAPI',
 	'ChatVercel',
 	'ChatCerebras',
 ]
