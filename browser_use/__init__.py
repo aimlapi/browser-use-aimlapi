@@ -52,6 +52,7 @@ if TYPE_CHECKING:
 	from browser_use.browser import BrowserSession as Browser
 	from browser_use.dom.service import DomService
 	from browser_use.llm import models
+	from browser_use.llm.aimlapi.chat import ChatAIMLAPI
 	from browser_use.llm.anthropic.chat import ChatAnthropic
 	from browser_use.llm.aws.chat_anthropic import ChatAnthropicBedrock
 	from browser_use.llm.aws.chat_bedrock import ChatAWSBedrock
@@ -97,6 +98,7 @@ _LAZY_IMPORTS = {
 	'ChatAnthropicBedrock': ('browser_use.llm.aws.chat_anthropic', 'ChatAnthropicBedrock'),
 	'ChatAWSBedrock': ('browser_use.llm.aws.chat_bedrock', 'ChatAWSBedrock'),
 	'ChatBrowserUse': ('browser_use.llm.browser_use.chat', 'ChatBrowserUse'),
+	'ChatAIMLAPI': ('browser_use.llm.aimlapi.chat', 'ChatAIMLAPI'),
 	'ChatCerebras': ('browser_use.llm.cerebras.chat', 'ChatCerebras'),
 	'ChatDeepSeek': ('browser_use.llm.deepseek.chat', 'ChatDeepSeek'),
 	'ChatGroq': ('browser_use.llm.groq.chat', 'ChatGroq'),
@@ -149,6 +151,7 @@ __all__ = [
 	'ActionModel',
 	'AgentHistoryList',
 	# Chat models
+	'ChatAIMLAPI',
 	'ChatOpenAI',
 	'ChatGoogle',
 	'ChatAnthropic',

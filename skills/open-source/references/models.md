@@ -6,6 +6,7 @@ Browser Use natively supports 15+ LLM providers. Most providers accept any model
 
 | Provider | Class | Env Variable |
 |----------|-------|--------------|
+| aimlapi.com | `ChatAIMLAPI` | `AIMLAPI_API_KEY` |
 | Browser Use Cloud | `ChatBrowserUse` | `BROWSER_USE_API_KEY` |
 | OpenAI | `ChatOpenAI` | `OPENAI_API_KEY` |
 | Anthropic | `ChatAnthropic` | `ANTHROPIC_API_KEY` |
@@ -33,6 +34,7 @@ Based on our [benchmark of real-world browser tasks](https://browser-use.com/pos
 - **Fast + capable**: `gemini-3-1-pro` — 59.3% accuracy
 
 ## Table of Contents
+- [aimlapi.com](#aimlapicom)
 - [Browser Use Cloud (Recommended)](#browser-use-cloud)
 - [OpenAI](#openai)
 - [Anthropic](#anthropic)
@@ -51,6 +53,18 @@ Based on our [benchmark of real-world browser tasks](https://browser-use.com/pos
 - [OpenAI-Compatible APIs](#openai-compatible-apis)
 
 ---
+
+## aimlapi.com
+
+Access 350+ chat models from OpenAI, Anthropic, Google, DeepSeek, Qwen and xAI through a single OpenAI-compatible API.
+
+```python
+from browser_use import Agent, ChatAIMLAPI
+
+llm = ChatAIMLAPI(model="anthropic/claude-sonnet-4.6")
+```
+
+**Env:** `AIMLAPI_API_KEY` | [Available models](https://api.aimlapi.com/v1/models)
 
 ## Browser Use Cloud
 

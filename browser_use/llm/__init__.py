@@ -26,6 +26,7 @@ from browser_use.llm.messages import (
 
 # Type stubs for lazy imports
 if TYPE_CHECKING:
+	from browser_use.llm.aimlapi.chat import ChatAIMLAPI
 	from browser_use.llm.anthropic.chat import ChatAnthropic
 	from browser_use.llm.aws.chat_anthropic import ChatAnthropicBedrock
 	from browser_use.llm.aws.chat_bedrock import ChatAWSBedrock
@@ -80,6 +81,7 @@ if TYPE_CHECKING:
 
 # Lazy imports mapping for heavy chat models
 _LAZY_IMPORTS = {
+	'ChatAIMLAPI': ('browser_use.llm.aimlapi.chat', 'ChatAIMLAPI'),
 	'ChatAnthropic': ('browser_use.llm.anthropic.chat', 'ChatAnthropic'),
 	'ChatAnthropicBedrock': ('browser_use.llm.aws.chat_anthropic', 'ChatAnthropicBedrock'),
 	'ChatAWSBedrock': ('browser_use.llm.aws.chat_bedrock', 'ChatAWSBedrock'),
@@ -144,6 +146,7 @@ __all__ = [
 	'ContentRefusal',
 	'ContentImage',
 	# Chat models
+	'ChatAIMLAPI',
 	'BaseChatModel',
 	'ChatOpenAI',
 	'ChatBrowserUse',
